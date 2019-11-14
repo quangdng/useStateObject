@@ -1,9 +1,11 @@
 {
   "name": "use-state-object",
-  "version": "1.0.1",
+  "version": "0.0.1",
   "description": "A React functional component hook to mimic Class component object state management.",
   "main": "index.js",
   "types": "index.d.ts",
+  "repository": "github:quangdng/useStateObject",
+  "bugs": "https://github.com/quangdng/useStateObject/issues",
   "scripts": {
     "test": "jest",
     "build": "pika build",
