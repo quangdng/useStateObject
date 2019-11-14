@@ -1,0 +1,68 @@
+{
+  "name": "use-object-state",
+  "version": "1.0.0",
+  "description": "A React functional component hook to mimic Class component object state management.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "pika build"
+  },
+  "peerDependencies": {
+    "react": "^16.8.x",
+    "react-dom": "^16.8.x"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "@pika/pack": "^0.5.0",
+    "@pika/plugin-build-node": "^0.7.1",
+    "@pika/plugin-build-types": "^0.7.1",
+    "@pika/plugin-build-umd": "^0.7.1",
+    "@pika/plugin-build-web": "^0.7.1",
+    "@pika/plugin-standard-pkg": "^0.7.1",
+    "@testing-library/jest-dom": "^4.2.3",
+    "@testing-library/react": "^9.3.2",
+    "jest": "^24.9.0",
+    "react": "^16.8.x",
+    "react-dom": "^16.8.x"
+  },
+  "keywords": [
+    "hook",
+    "functional",
+    "class",
+    "object",
+    "state"
+  ],
+  "author": "Justin Nguyen",
+  "license": "ISC",
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./setupTests.js"
+    ]
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg",
+        {
+          "exclude": [
+            "*.test.js"
+          ]
+        }
+      ],
+      [
+        "@pika/plugin-build-node"
+      ],
+      [
+        "@pika/plugin-build-web"
+      ],
+      [
+        "@pika/plugin-build-types"
+      ],
+      [
+        "@pika/plugin-build-umd"
+      ]
+    ]
+  }
+}
