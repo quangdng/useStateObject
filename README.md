@@ -18,13 +18,14 @@ const [state, useState] = useState({
 Usage:
 
 ```javascript
+// State will be merged with the object you provide to setState instead of being replaced
 setState({
   isLoading: true
 });
 
-// State will be merged with the object you provide in setState instead of being replaced
+// State is now
 // {
 //    isLoading: true,
-//    error: true
+//    isError: false
 // }
 ```
