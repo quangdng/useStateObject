@@ -6,7 +6,8 @@
   "types": "index.d.ts",
   "scripts": {
     "test": "jest",
-    "build": "pika build"
+    "build": "pika build",
+    "lint": "eslint ."
   },
   "peerDependencies": {
     "react": "^16.8.x",
@@ -15,6 +16,7 @@
   "devDependencies": {
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-react": "^7.7.0",
+    "@babel/preset-typescript": "^7.7.2",
     "@pika/pack": "^0.5.0",
     "@pika/plugin-build-node": "^0.7.1",
     "@pika/plugin-build-types": "^0.7.1",
@@ -23,16 +25,21 @@
     "@pika/plugin-standard-pkg": "^0.7.1",
     "@testing-library/jest-dom": "^4.2.3",
     "@testing-library/react": "^9.3.2",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-prettier": "^3.1.1",
     "jest": "^24.9.0",
+    "prettier": "^1.19.1",
     "react": "^16.8.x",
     "react-dom": "^16.8.x"
   },
   "keywords": [
-    "hook",
-    "functional",
-    "class",
-    "object",
-    "state"
+    "react hook",
+    "functional component",
+    "class component",
+    "object state",
+    "merge state"
   ],
   "author": "Justin Nguyen",
   "license": "ISC",
