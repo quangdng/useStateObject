@@ -1,5 +1,5 @@
 {
-  "name": "use-object-state",
+  "name": "use-state-object",
   "version": "1.0.0",
   "description": "A React functional component hook to mimic Class component object state management.",
   "main": "index.js",
@@ -7,7 +7,9 @@
   "scripts": {
     "test": "jest",
     "build": "pika build",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "publish": "pika publish",
+    "version": "npm run build"
   },
   "peerDependencies": {
     "react": "^16.8.x",

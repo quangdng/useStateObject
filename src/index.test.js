@@ -1,15 +1,15 @@
 import React from "react";
-import useObjectState from "./index";
+import useStateObject from "./index";
 import { render, fireEvent } from "@testing-library/react";
 
-describe("Testing useObjectState hook", () => {
+describe("Testing useStateObject hook", () => {
   const initialState = {
     stateA: "stateA",
     stateB: "stateB"
   };
 
   const SampleComponent = () => {
-    const [state, setState] = useObjectState(initialState);
+    const [state, setState] = useStateObject(initialState);
 
     return (
       <>
@@ -64,7 +64,7 @@ describe("Testing useObjectState hook", () => {
 
   it("should throw error if initial state is not an object", () => {
     const InvalidStateComponent = () => {
-      useObjectState("test");
+      useStateObject("test");
 
       return "component";
     };

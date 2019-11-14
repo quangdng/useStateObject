@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function useObjectState(initialState) {
+export default function useStateObject(initialState) {
   if (initialState && typeof initialState != "object") {
     throw new Error(
       "Initial state has to be an object to be able to make use of this hook."

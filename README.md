@@ -1,6 +1,6 @@
-# useObjectState hook
+# useStateObject hook
 
-[![Build Status](https://travis-ci.org/quangdng/useObjectState.svg?branch=master)](https://travis-ci.org/quangdng/useObjectState)
+[![Build Status](https://travis-ci.org/quangdng/useStateObject.svg?branch=master)](https://travis-ci.org/quangdng/useStateObject)
 
 A React functional component hook to mimic Class component object state management.
 

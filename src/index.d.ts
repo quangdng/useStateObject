@@ -1,4 +1,4 @@
-export default function useObjectState(
+export default function useStateObject(
   initialState?: Object
 ): {
   state: Object;
