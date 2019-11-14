@@ -8,6 +8,7 @@
   "bugs": "https://github.com/quangdng/useStateObject/issues",
   "scripts": {
     "test": "jest",
+    "test:ci": "jest && codecov",
     "build": "pika build",
     "lint": "eslint .",
     "publish": "pika publish",
@@ -30,6 +31,7 @@
     "@testing-library/jest-dom": "^4.2.3",
     "@testing-library/react": "^9.3.2",
     "babel-eslint": "^10.0.3",
+    "codecov": "^3.6.1",
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-prettier": "^3.1.1",
@@ -48,6 +50,8 @@
   "author": "Justin Nguyen",
   "license": "ISC",
   "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
     "setupFilesAfterEnv": [
       "./setupTests.js"
     ]

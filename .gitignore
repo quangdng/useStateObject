@@ -4,3 +4,6 @@ node_modules
 
 # Dist
 pkg
+
+# Code coverage
+coverage
