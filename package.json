@@ -1,6 +1,6 @@
 {
   "name": "use-state-object",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A React functional component hook to mimic Class component object state management.",
   "main": "index.js",
   "types": "index.d.ts",
