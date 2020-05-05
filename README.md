@@ -11,7 +11,7 @@ A React functional component hook to mimic Class component object state manageme
 State declaration:
 
 ```javascript
-const [state, useState] = useState({
+const [state, setState] = useStateObject({
   isLoading: false,
   isError: false
 });
